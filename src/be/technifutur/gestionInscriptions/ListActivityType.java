@@ -1,9 +1,14 @@
 package be.technifutur.gestionInscriptions;
 
 import java.io.Serializable;
+import java.util.Map;
 
 public class ListActivityType implements Serializable {
-    public ActivityType addActivityType (String nom, boolean registrationRequired ) {
+
+    Map<String, String> activityMap;
+
+    public ActivityType addActivityType (String name, boolean registrationRequired ) {
+
         return at;
     }
 
