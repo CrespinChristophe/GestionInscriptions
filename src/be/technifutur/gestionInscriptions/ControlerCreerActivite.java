@@ -23,7 +23,7 @@ public class ControlerCreerActivite implements Callable {
         boolean binscriptionActivity = false;
         if(inscriptionActivity.charAt(0) == 'O' || inscriptionActivity.charAt(0) == 'o')
             binscriptionActivity = true;
-
+        lat.addActivityType(inscriptionActivity, binscriptionActivity);
 
 
 

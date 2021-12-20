@@ -6,11 +6,12 @@ import java.util.TreeMap;
 
 public class ListActivityType implements Serializable {
 
-    Map<>
+    Map<String, ActivityType> dicoActivity = new TreeMap<>();
 
     public ActivityType addActivityType (String name, boolean registrationRequired ) {
-
-        return null;
+        ActivityType activityType = new ActivityType(name, registrationRequired);
+        dicoActivity.put(name, activityType);
+        return activityType;
     }
 
     public ActivityType get(String name) {
