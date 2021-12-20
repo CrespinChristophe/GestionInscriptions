@@ -7,6 +7,7 @@ public class ActivityType implements Serializable {
     private String name;
     private boolean registration;
 
+    //public ActivityType
     public ActivityType (String name, boolean inscription) {
         this.name = name;
         registration = inscription;

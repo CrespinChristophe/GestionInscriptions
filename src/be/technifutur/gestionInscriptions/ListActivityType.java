@@ -6,21 +6,19 @@ import java.util.TreeMap;
 
 public class ListActivityType implements Serializable {
 
-    //Map<String, String> activityMap;
+    Map<>
 
     public ActivityType addActivityType (String name, boolean registrationRequired ) {
 
-        Map<String, String> activityMap = new TreeMap<>();
-
-        return at;
+        return null;
     }
 
     public ActivityType get(String name) {
-        return this.name;
+        return null;
     }
 
     public ActivityType remove(String name) {
-        return this.name;
+        return null;
     }
 
     @Override
