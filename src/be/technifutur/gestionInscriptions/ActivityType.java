@@ -1,13 +1,15 @@
 package be.technifutur.gestionInscriptions;
 
-public class ActivityType {
+import java.io.Serializable;
+
+public class ActivityType implements Serializable {
 
     private String name;
     private boolean registration;
 
     public ActivityType (String name, boolean inscription) {
         this.name = name;
-        this.registration = inscription;
+        registration = inscription;
     }
 
     public String getName() {
@@ -15,11 +17,15 @@ public class ActivityType {
     }
 
     public boolean isRegistrationRequired() {
-        return b;
+        return registration;
     }
 
     public void setName (String name) {
         this.name = name;
+    }
+
+    public void setRegistrationRequired (boolean flag) {
+        registration = flag;
     }
 
 }
