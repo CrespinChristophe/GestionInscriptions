@@ -28,4 +28,11 @@ public class ActivityType implements Serializable {
         registration = flag;
     }
 
+    @Override
+    public String toString() {
+        return "ActivityType{" +
+                "name='" + name + '\'' +
+                ", registration=" + registration +
+                '}';
+    }
 }
