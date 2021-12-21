@@ -20,7 +20,11 @@ public class ActivityVue {
         return nom;
     }
 
-    public void messageErreurDejaPresent (String name) {
-        System.out.println("L'activité " + name + " existe déjà !!!");
+    public void messageErreurDejaPresent () {
+        System.out.println("Cette activité existe déjà !!!");
+    }
+
+    public void affichageDescriptifActivite (ActivityType at) {
+        System.out.println(at);
     }
 }
