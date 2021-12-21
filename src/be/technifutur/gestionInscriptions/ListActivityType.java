@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class ListActivityType implements Serializable {
 
-    Map<String, ActivityType> dicoActivity = new TreeMap<>();
+    private Map<String, ActivityType> dicoActivity = new TreeMap<>();
 
     public ActivityType addActivityType (String name, boolean registrationRequired ) {
         ActivityType activityType = new ActivityType(name, registrationRequired);
@@ -15,7 +15,7 @@ public class ListActivityType implements Serializable {
     }
 
     public ActivityType get(String name) {
-        return null;
+        return dicoActivity.get(name);
     }
 
     public ActivityType remove(String name) {

@@ -19,4 +19,8 @@ public class ActivityVue {
         String nom = sc.nextLine();
         return nom;
     }
+
+    public void messageErreurDejaPresent (String name) {
+        System.out.println("L'activité " + name + " existe déjà !!!");
+    }
 }

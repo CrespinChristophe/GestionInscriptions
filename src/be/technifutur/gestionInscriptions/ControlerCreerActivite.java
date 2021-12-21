@@ -17,14 +17,24 @@ public class ControlerCreerActivite implements Callable {
 
     @Override
     public Object call() throws Exception {
-        String nomActivity = av.saisirNomActivity();
-        System.out.println("Bonjour" + nomActivity);
+
+        String nomActivity = "";
+        ActivityType present;
+
+        do {
+            nomActivity = av.saisirNomActivity();
+            present = lat.get(nomActivity);
+            if (present != null)
+                av.messageErreurDejaPresent(nomActivity);
+        } while (present != null);
+
+
+        System.out.println("Activité sélectionnée ==> " + nomActivity);
         String inscriptionActivity = av.saisirInscriptionActivity();
         boolean binscriptionActivity = false;
-        if(inscriptionActivity.charAt(0) == 'O' || inscriptionActivity.charAt(0) == 'o')
+        if (inscriptionActivity.charAt(0) == 'O' || inscriptionActivity.charAt(0) == 'o')
             binscriptionActivity = true;
         lat.addActivityType(inscriptionActivity, binscriptionActivity);
-
 
 
         return null;
