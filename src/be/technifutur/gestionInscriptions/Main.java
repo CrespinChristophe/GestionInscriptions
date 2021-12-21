@@ -8,6 +8,8 @@ public class Main {
         controleurCreerActivite.setVue(activityVue);
         controleurCreerActivite.setModel(listActivityType);
         controleurCreerActivite.call();
+        ControlerModifierActivite.setVue(activityVue);
+        ControlerModifierActivite.setModel(listActivityType);
 
     }
 }
