@@ -19,22 +19,22 @@ public class ControlerCreerActivite implements Callable {
     public Object call() throws Exception {
 
         String nomActivity = "";
+//for(int i=0; i<4 ;i++) {
+    nomActivity = av.saisirNomActivity();
+    ActivityType present = lat.get(nomActivity);
 
-        nomActivity = av.saisirNomActivity();
-        ActivityType present = lat.get(nomActivity);
-
-            if (present != null) {
-                av.affichageDescriptifActivite(present);
-                av.messageErreurDejaPresent();
-            }else {
-                String inscriptionActivity = av.saisirInscriptionActivity();
-                boolean binscriptionActivity = false;
-                if (inscriptionActivity.charAt(0) == 'O' || inscriptionActivity.charAt(0) == 'o')
-                    binscriptionActivity = true;
-                lat.addActivityType(nomActivity, binscriptionActivity);
-                av.affichageDescriptifActivite(lat.get(nomActivity));
-            }
-
+    if (present != null) {
+        av.affichageDescriptifActivite(present);
+        av.messageErreurDejaPresent();
+    } else {
+        String inscriptionActivity = av.saisirInscriptionActivity();
+        boolean binscriptionActivity = false;
+        if (inscriptionActivity.charAt(0) == 'O' || inscriptionActivity.charAt(0) == 'o')
+            binscriptionActivity = true;
+        lat.addActivityType(nomActivity, binscriptionActivity);
+        av.affichageDescriptifActivite(lat.get(nomActivity));
+    }
+//}
         return null;
     }
 
