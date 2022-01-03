@@ -12,9 +12,10 @@ public class Main {
         controlerSupprimerActivite.setVue(activityVue);
         controlerSupprimerActivite.setModel(listActivityType);
         controlerSupprimerActivite.call();
-        /*ControlerModifierActivite controlerModifierActivite = new ControlerModifierActivite();
+        ControlerModifierActivite controlerModifierActivite = new ControlerModifierActivite();
         controlerModifierActivite.setVue(activityVue);
-        controlerModifierActivite.setModel(listActivityType);*/
+        controlerModifierActivite.setModel(listActivityType);
+        controlerModifierActivite.call();
 
     }
 }

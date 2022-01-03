@@ -1,5 +1,6 @@
 package be.technifutur.gestionInscriptions;
 
+import java.util.Map;
 import java.util.concurrent.Callable;
 
 public class ControlerModifierActivite implements Callable {
@@ -17,6 +18,13 @@ public class ControlerModifierActivite implements Callable {
 
     @Override
     public Object call() throws Exception {
+
+        for (Map.Entry<String, ActivityType> temp :  lat.getDicoActivity().entrySet()) {
+            av.affichageDescriptifActivite(temp.getValue());
+        }
+
+
+
         return null;
     }
 }
