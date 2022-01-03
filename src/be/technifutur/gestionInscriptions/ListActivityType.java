@@ -14,6 +14,10 @@ public class ListActivityType implements Serializable {
         return activityType;
     }
 
+    public Map<String, ActivityType> getDicoActivity() {
+        return dicoActivity;
+    }
+
     public ActivityType get(String name) {
         return dicoActivity.get(name);
     }

@@ -1,5 +1,7 @@
 package be.technifutur.gestionInscriptions;
 
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Callable;
 
 public class ControlerSupprimerActivite implements Callable {
@@ -18,7 +20,9 @@ public class ControlerSupprimerActivite implements Callable {
     @Override
     public Object call() throws Exception {
 
-        av.saisirNomActivity();
+        for ( Map.Entry<String, ActivityType> temp : lat.getDicoActivity().entrySet()) {
+
+        }
 
 
         return null;
