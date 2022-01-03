@@ -10,6 +10,7 @@ public class Main {
         controleurCreerActivite.call();
         ControlerModifierActivite.setVue(activityVue);
         ControlerModifierActivite.setModel(listActivityType);
+        //essais
 
     }
 }
