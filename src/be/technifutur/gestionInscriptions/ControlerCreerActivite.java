@@ -18,9 +18,7 @@ public class ControlerCreerActivite implements Callable {
     @Override
     public Object call() throws Exception {
 
-        String nomActivity = "";
-
-    nomActivity = av.saisirNomActivity();
+    String nomActivity = av.saisirNomActivity();
     ActivityType present = lat.get(nomActivity);
 
     if (present != null) {

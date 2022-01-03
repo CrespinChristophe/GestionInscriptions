@@ -24,6 +24,17 @@ public class ControlerSupprimerActivite implements Callable {
             av.affichageNomActivite(temp.getKey());
         }
 
+        String nomActivity = av.saisirNomActivity();
+        ActivityType present = lat.get(nomActivity);
+
+        if (present != null) {
+            av.affichageDescriptifActivite(present);
+            av.messageErreurDejaPresent();
+        } else {
+
+
+
+        }
 
 
 
