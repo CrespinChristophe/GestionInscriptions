@@ -7,13 +7,27 @@ public class Main {
         ControlerCreerActivite controlerCreerActivite = new ControlerCreerActivite();
         controlerCreerActivite.setVue(activityVue);
         controlerCreerActivite.setModel(listActivityType);
+        /*int reponse = 1;
+        while (reponse != 0) {
+            switch (reponse) {
+                case 1 : controlerCreerActivite.call();
+                case 2 : contr
+
+            }
+
+
+
+
+
+        }*/
         controlerCreerActivite.call();
         ControlerSupprimerActivite controlerSupprimerActivite = new ControlerSupprimerActivite();
         controlerSupprimerActivite.setVue(activityVue);
         controlerSupprimerActivite.setModel(listActivityType);
-        ControlerModifierActivite controlerModifierActivite = new ControlerModifierActivite();
+        controlerSupprimerActivite.call();
+        /*ControlerModifierActivite controlerModifierActivite = new ControlerModifierActivite();
         controlerModifierActivite.setVue(activityVue);
-        controlerModifierActivite.setModel(listActivityType);
+        controlerModifierActivite.setModel(listActivityType);*/
 
     }
 }

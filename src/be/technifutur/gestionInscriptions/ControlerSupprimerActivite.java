@@ -30,7 +30,7 @@ public class ControlerSupprimerActivite implements Callable {
         if (present != null) {
             av.affichageSuppression(lat.remove(present.getName()));
         } else {
-            av.affichageErreurPasPresent(present.getName());
+            av.affichageErreurPasPresent(nomActivity);
         }
 
         return null;
