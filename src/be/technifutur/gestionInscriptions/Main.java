@@ -11,8 +11,9 @@ public class Main {
         ControlerSupprimerActivite controlerSupprimerActivite = new ControlerSupprimerActivite();
         controlerSupprimerActivite.setVue(activityVue);
         controlerSupprimerActivite.setModel(listActivityType);
-        ControlerModifierActivite.setVue(activityVue);
-        ControlerModifierActivite.setModel(listActivityType);
+        ControlerModifierActivite controlerModifierActivite = new ControlerModifierActivite();
+        controlerModifierActivite.setVue(activityVue);
+        controlerModifierActivite.setModel(listActivityType);
 
     }
 }

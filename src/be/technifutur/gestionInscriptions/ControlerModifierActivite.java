@@ -4,10 +4,15 @@ import java.util.concurrent.Callable;
 
 public class ControlerModifierActivite implements Callable {
 
-    public static void setVue(ActivityVue activityVue) {
+    private ActivityVue av;
+    private ListActivityType lat;
+
+    public void setVue(ActivityVue activityVue) {
+        av = activityVue;
     }
 
-    public static void setModel(ListActivityType listActivityType) {
+    public void setModel(ListActivityType listActivityType) {
+        lat = listActivityType;
     }
 
     @Override
