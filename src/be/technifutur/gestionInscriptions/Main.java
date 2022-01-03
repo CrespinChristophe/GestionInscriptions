@@ -8,6 +8,9 @@ public class Main {
         controlerCreerActivite.setVue(activityVue);
         controlerCreerActivite.setModel(listActivityType);
         controlerCreerActivite.call();
+        ControlerSupprimerActivite controlerSupprimerActivite = new ControlerSupprimerActivite();
+        controlerSupprimerActivite.setVue(activityVue);
+        controlerSupprimerActivite.setModel(listActivityType);
         ControlerModifierActivite.setVue(activityVue);
         ControlerModifierActivite.setModel(listActivityType);
 
