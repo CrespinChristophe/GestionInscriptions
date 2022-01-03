@@ -23,7 +23,9 @@ public class ListActivityType implements Serializable {
     }
 
     public ActivityType remove(String name) {
-        return null;
+        ActivityType at = dicoActivity.get(name);
+        dicoActivity.remove(name);
+        return at;
     }
 
     @Override

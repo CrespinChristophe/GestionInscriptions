@@ -31,4 +31,13 @@ public class ActivityVue {
     public void affichageNomActivite (String s) {
         System.out.println(s);
     }
+
+    public void affichageSuppression (ActivityType at) {
+        System.out.println("L'activité " + at.getName() + " a été supprimée...");
+    }
+
+    public void affichageErreurPasPresent(String s) {
+        System.out.println("L'activité " + s + " n'est pas présente...");
+    }
+
 }
