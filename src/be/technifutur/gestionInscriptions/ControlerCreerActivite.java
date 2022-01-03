@@ -34,7 +34,6 @@ public class ControlerCreerActivite implements Callable {
         lat.addActivityType(nomActivity, binscriptionActivity);
         av.affichageDescriptifActivite(lat.get(nomActivity));
     }
-//}
         return null;
     }
 
