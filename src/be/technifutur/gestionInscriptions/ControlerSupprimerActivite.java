@@ -7,12 +7,12 @@ public class ControlerSupprimerActivite implements Callable {
     private ActivityVue av;
     private ListActivityType lat;
 
-    public ActivityVue getAv() {
-        return av;
+    public void setVue(ActivityVue activityVue) {
+        av = activityVue;
     }
 
-    public void setAv(ActivityVue av) {
-        this.av = av;
+    public void setModel(ListActivityType listActivityType) {
+        lat = listActivityType;
     }
 
     @Override
