@@ -19,7 +19,7 @@ public class ListActivityType implements Serializable {
     }
 
     public ActivityType get(String name) {
-        return dicoActivity.get(name);
+        return dicoActivity.get(name);//renvoit la value d'après la clé
     }
 
     public ActivityType remove(String name) {

@@ -21,8 +21,10 @@ public class ControlerSupprimerActivite implements Callable {
     public Object call() throws Exception {
 
         for ( Map.Entry<String, ActivityType> temp : lat.getDicoActivity().entrySet()) {
-
+            av.affichageNomActivite(temp.getKey());
         }
+
+
 
 
         return null;

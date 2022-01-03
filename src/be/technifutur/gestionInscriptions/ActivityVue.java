@@ -27,4 +27,8 @@ public class ActivityVue {
     public void affichageDescriptifActivite (ActivityType at) {
         System.out.println(at);
     }
+
+    public void affichageNomActivite (String s) {
+        System.out.println(s);
+    }
 }
