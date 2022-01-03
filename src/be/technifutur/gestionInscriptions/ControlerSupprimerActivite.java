@@ -18,6 +18,9 @@ public class ControlerSupprimerActivite implements Callable {
     @Override
     public Object call() throws Exception {
 
+        av.saisirNomActivity();
+
+
         return null;
     }
 }
