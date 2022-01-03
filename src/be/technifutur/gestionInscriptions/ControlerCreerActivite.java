@@ -19,7 +19,7 @@ public class ControlerCreerActivite implements Callable {
     public Object call() throws Exception {
 
         String nomActivity = "";
-//for(int i=0; i<4 ;i++) {
+
     nomActivity = av.saisirNomActivity();
     ActivityType present = lat.get(nomActivity);
 
