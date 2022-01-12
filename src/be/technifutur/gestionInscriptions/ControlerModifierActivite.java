@@ -28,7 +28,7 @@ public class ControlerModifierActivite implements Callable {
 
         if (present != null) {
             lat.remove(present.getName());
-            lat
+            la
         } else {
             av.affichageErreurPasPresent(nomActivity);
         }
