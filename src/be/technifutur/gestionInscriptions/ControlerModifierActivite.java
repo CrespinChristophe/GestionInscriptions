@@ -23,7 +23,8 @@ public class ControlerModifierActivite implements Callable {
             av.affichageDescriptifActivite(temp.getValue());
         }
 
-            String nomActivity = av.saisirNomActivity();
+        String nomActivity = av.saisirNomActivity();
+        ActivityType present = lat.get(nomActivity);
 
 
         return null;
